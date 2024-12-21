@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text Snipe</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text Snipe</h1>
+      <button id="captureBtn" class="primary-button">
+        Sélectionner une zone
+      </button>
+      <div id="result" class="result-container">
+        <textarea
+          id="extractedText"
+          readonly
+          placeholder="Le texte extrait apparaîtra ici..."
+        ></textarea>
+        <button id="copyBtn" class="secondary-button" disabled>Copier</button>
+      </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
